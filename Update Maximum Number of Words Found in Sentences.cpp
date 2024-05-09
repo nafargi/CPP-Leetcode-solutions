@@ -1,1 +1,1 @@
-Update Maximum Number of Words Found in Sentences
+        maxWord=max(maxWord,counter);
