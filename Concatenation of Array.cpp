@@ -11,7 +11,6 @@ public:
             else{
                  ans[i]=nums[i-n] ;
             }
-        
      } 
       return ans;
     }
