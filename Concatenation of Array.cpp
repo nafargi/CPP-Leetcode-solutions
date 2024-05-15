@@ -11,7 +11,6 @@ public:
                  ans[i]=nums[i-n] ;
             }
      } 
-        
       return ans;
     }
 };
