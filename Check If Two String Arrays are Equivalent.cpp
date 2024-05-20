@@ -13,8 +13,7 @@ public:
             for(int j=0; j<word2[i].size(); j++){
                stringWord2.push_back(word2[i][j]);
             }
-       }
-        
+       } 
     return stringWord1==stringWord2;
     }
 };
