@@ -9,7 +9,6 @@ public:
                stringWord1.push_back(word1[i][j]);
             }
        }
-        
        for(int i=0; i<word2.size(); i++){
             for(int j=0; j<word2[i].size(); j++){
                stringWord2.push_back(word2[i][j]);
