@@ -13,6 +13,7 @@ public:
             sum+=nums[i];
             }
        }
+        
       return sum; 
     }
 };
