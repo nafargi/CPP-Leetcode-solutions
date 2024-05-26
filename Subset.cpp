@@ -1,5 +1,5 @@
 //this code beats 100% of C++ users
-class Solution {   1
+class Solution {   
  public:
   vector<vector<int>> subsets(vector<int>& nums) {
     vector<vector<int>> ans;
