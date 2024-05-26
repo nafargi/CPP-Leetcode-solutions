@@ -1,5 +1,5 @@
 class Solution {
- public:lllllll
+ public:llllll
   long long flowerGame(int n, int m) {
     const int xEven = n / 2;
     const int yEven = m / 2;
