@@ -1,5 +1,5 @@
 class Solution {
- public:111111
+ public:11111
   int returnToBoundaryCount(vector<int>& nums) {
     partial_sum(nums.begin(), nums.end(), nums.begin());
     return ranges::count(nums, 0);
