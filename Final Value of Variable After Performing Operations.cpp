@@ -1,5 +1,5 @@
 class Solution {
-public:  11
+public:  1
     int finalValueAfterOperations(vector<string>& operations) {
          int n= operations.size();
         int value=0;
