@@ -14,7 +14,6 @@ public:
             value--;
          }
         }
-
         return value;
     }
 };
