@@ -1,28 +1,65 @@
-constexpr int MOD = 1e9 + 7;
+//Beats 98.90% of users with C++
+const long long mod=1e9+7;
+using Matrix = vector<vector<unsigned long long>>;
+const Matrix T = {
+    //S0 S1 S2 S3 S4 S5
+    {1, 1, 0, 1, 0, 0}, // S0
+    {1, 0, 1, 1, 0, 0}, // S1
+    {1, 0, 0, 1, 0, 0}, // S2
+    {0, 0, 0, 1, 1, 0}, // S3
+    {0, 0, 0, 1, 0, 1}, // S4
+    {0, 0, 0, 1, 0, 0}  // S5
+};
+
+const Matrix I = {//identity matrix
+    //S0 S1 S2 S3 S4 S5
+    {1, 0, 0, 0, 0, 0},
+    {0, 1, 0, 0, 0, 0},
+    {0, 0, 1, 0, 0, 0},
+    {0, 0, 0, 1, 0, 0},
+    {0, 0, 0, 0, 1, 0},
+    {0, 0, 0, 0, 0, 1}
+};
+
+// Overloading the * operator for matrix multiplication
+Matrix operator*(const Matrix& A, const Matrix& B) {
+    int n = A.size();
+    int m = B[0].size();
+    int p = A[0].size();
+    Matrix C(n, vector<unsigned long long>(m, 0));
+    for (int i = 0; i < n; ++i) {
+        for (int j = 0; j < m; ++j) {
+            for (int k = 0; k < p; ++k) {
+                C[i][j]=(C[i][j]+A[i][k]*B[k][j]) % mod;
+            }
+        }
+    }
+    return C;
+}
+
+// recursive Function for matrix exponentiation (LSBF)
+inline Matrix pow(Matrix M, int n){
+    if (n==0) return I;
+    Matrix A=(n&1)?M:I;
+    return pow((M*M), n/2)*A;
+}
 
 class Solution {
 public:
     int checkRecord(int n) {
-        using ll = long long;
-        vector<vector<vector<ll>>> dp(n, vector<vector<ll>>(2, vector<ll>(3)));
-        dp[0][0][0] = dp[0][0][1] = dp[0][1][0] = 1;
+        // Compute T^n
+        Matrix A = pow(T, n);
 
-        for (int i = 1; i < n; ++i) {
-            dp[i][1][0] = (dp[i - 1][0][0] + dp[i - 1][0][1] + dp[i - 1][0][2]) % MOD;
-            dp[i][0][1] = dp[i - 1][0][0];
-            dp[i][0][2] = dp[i - 1][0][1];
-            dp[i][1][1] = dp[i - 1][1][0];
-            dp[i][1][2] = dp[i - 1][1][1];
-            dp[i][0][0] = (dp[i - 1][0][0] + dp[i - 1][0][1] + dp[i - 1][0][2]) % MOD;
-            dp[i][1][0] = (dp[i][1][0] + dp[i - 1][1][0] + dp[i - 1][1][1] + dp[i - 1][1][2]) % MOD;
-        }
-
-        ll ans = 0;
-        for (int j = 0; j < 2; ++j) {
-            for (int k = 0; k < 3; ++k) {
-                ans = (ans + dp[n - 1][j][k]) % MOD;
-            }
-        }
+        // Compute the final state using sum(A[0])
+        unsigned long long ans=(accumulate(A[0].begin(), A[0].begin()+6, mod))%mod;
         return ans;
     }
 };
+
+
+auto init = []() {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    return 0;
+}();
