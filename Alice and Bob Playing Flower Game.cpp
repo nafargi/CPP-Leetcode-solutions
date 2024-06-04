@@ -1,7 +1,6 @@
 class Solution {
  public:
   long long flowerGame(int n, int m) {
-   
     const int xEven = n / 2;
     const int yEven = m / 2;
     const int xOdd = (n + 1) / 2;
