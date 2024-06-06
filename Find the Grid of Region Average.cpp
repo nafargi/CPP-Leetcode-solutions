@@ -26,7 +26,7 @@ class Solution {
   }
 
  private:
-  // Returns true if image[i..i + 2][j..j + 2] is a region.
+
   bool isRegion(const vector<vector<int>>& image, int i, int j, int threshold) {
     for (int x = i; x < i + 3; ++x)
       for (int y = j; y < j + 3; ++y) {
