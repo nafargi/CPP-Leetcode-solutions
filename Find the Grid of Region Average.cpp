@@ -38,7 +38,6 @@ class Solution {
     return true;
   }
 
-  // Returns the sum of image[i..i + 2][j..j + 2].
   int getSubgridSum(const vector<vector<int>>& image, int i, int j) {
     int subgridSum = 0;
     for (int x = i; x < i + 3; ++x)
