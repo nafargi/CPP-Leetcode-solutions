@@ -6,7 +6,6 @@ class Solution {
       return {};
     vector<vector<int>> ans;
     ranges::sort(nums);
-   1
     for (int i = 0; i + 2 < nums.size(); ++i) {
       if (i > 0 && nums[i] == nums[i - 1])
         continue;
