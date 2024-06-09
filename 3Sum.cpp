@@ -6,7 +6,7 @@ class Solution {
       return {};
     vector<vector<int>> ans;
     ranges::sort(nums);
-   1111111
+   111111
     for (int i = 0; i + 2 < nums.size(); ++i) {
       if (i > 0 && nums[i] == nums[i - 1])
         continue;
