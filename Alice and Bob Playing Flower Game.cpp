@@ -8,4 +8,4 @@ class Solution {
     return 1L * xEven * yOdd + 1L * yEven * xOdd;
   }
 };
-d
+
