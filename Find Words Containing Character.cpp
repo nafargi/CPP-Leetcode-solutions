@@ -1,5 +1,4 @@
-ddd
-class Solution {
+dddclass Solution {
 public:
     vector<int> findWordsContaining(vector<string>& words, char x) {
         vector<int> numList ;   
