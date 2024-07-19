@@ -1,7 +1,7 @@
 //this code Beats 100.00% of users with C++
 class Solution {
 public:
-nnnnnnnnn
+nnnnnnnn
     bool arrayStringsAreEqual(vector<string>& word1, vector<string>& word2) {
        string stringWord1;
        string stringWord2;
