@@ -2,7 +2,7 @@
 class Solution {
  public:
   vector<vector<int>> threeSum(vector<int>& nums) {
-    if (nums.size() < 3)
+    if (nums.size() < 3) j
       return {};
     vector<vector<int>> ans;
     ranges::sort(nums);
