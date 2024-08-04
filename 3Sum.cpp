@@ -1,7 +1,6 @@
 //Beats 97.94% of users with C++
 class Solution {
  public:
-
   vector<vector<int>> threeSum(vector<int>& nums) {
     if (nums.size() < 3)  
       return {};
