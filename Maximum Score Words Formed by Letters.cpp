@@ -5,7 +5,6 @@ public:
         for (char& letter : letters) {
             letterCounts[letter - 'a']++; 
         }
-
         int numWords = words.size(); 
         int maxScore = 0; 
 
