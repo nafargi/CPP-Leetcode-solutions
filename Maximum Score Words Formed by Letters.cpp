@@ -8,7 +8,6 @@ public:
         int numWords = words.size(); 
         int maxScore = 0; 
         
-
         for (int combination = 0; combination < (1 << numWords); ++combination) {
             int wordCounts[26] = {0}; 
             for (int wordIndex = 0; wordIndex < numWords; ++wordIndex) {
