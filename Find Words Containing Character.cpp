@@ -10,6 +10,7 @@ public:
                   numList.push_back(i);
                     break;
                  }
+                
             }
         }
         return numList;
