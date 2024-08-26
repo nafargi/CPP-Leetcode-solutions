@@ -11,7 +11,6 @@ public:
                 }
             }
         }
-
         vector<int> listNumber(points.size());
         for (int i = 0; i < points.size(); i++) {
             listNumber[i] = points[i][0];
