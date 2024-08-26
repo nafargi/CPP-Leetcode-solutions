@@ -21,7 +21,6 @@ public:
             int widestArea = listNumber[i] - listNumber[i - 1];
             maxWidth = maxNum(maxWidth, widestArea);
         }
-
         return maxWidth;
     }
 
