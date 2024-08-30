@@ -39,7 +39,7 @@ class Solution {
       distToDestination = dijkstra(graph, source, destination);
       if (distToDestination <= target) {
         w += target - distToDestination;
-        // Change the weights of negative edges to an impossible value.
+    
         for (int j = i + 1; j < edges.size(); ++j)
           if (edges[j][2] == -1)
             edges[j][2] = kMax;
@@ -53,7 +53,7 @@ class Solution {
  private:
   int dijkstra(const vector<vector<pair<int, int>>>& graph, int src, int dst) {
     vector<int> dist(graph.size(), INT_MAX);
-    using P = pair<int, int>;  // (d, u)
+    using P = pair<int, int>; 
     priority_queue<P, vector<P>, greater<>> minHeap;
 
     dist[src] = 0;
