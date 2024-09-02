@@ -7,6 +7,7 @@ public:
         unordered_map<int, int> mod {{0, -1}};
         int sum = 0, remainder;
         for (int i = 0; i < n; i++) {
+            
             sum += nums[i];
             remainder = sum % k; 
             if (mod.count(remainder)) {
