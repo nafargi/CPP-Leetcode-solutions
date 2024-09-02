@@ -9,7 +9,6 @@ public:
         for (int i = 0; i < n; i++) {
             sum += nums[i];
             remainder = sum % k; 
-            
             if (mod.count(remainder)) {
                 
                 if (i - mod[remainder] >= 2) return true;
