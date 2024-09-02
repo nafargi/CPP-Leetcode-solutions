@@ -11,6 +11,7 @@ public:
             remainder = sum % k; 
             if (mod.count(remainder)) {
                 if (i - mod[remainder] >= 2) return true;
+                
             } else {
                 mod[remainder] = i;
             }
