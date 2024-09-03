@@ -5,7 +5,6 @@ class Solution {
     const int yEven = m / 2;
     const int xOdd = (n + 1) / 2;
     const int yOdd = (m + 1) / 2;
-   
     return 1L * xEven * yOdd + 1L * yEven * xOdd;
   }
 };
