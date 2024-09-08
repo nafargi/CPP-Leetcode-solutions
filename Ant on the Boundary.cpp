@@ -5,4 +5,3 @@ class Solution {
     return ranges::count(nums, 0);
   }
 };
-
