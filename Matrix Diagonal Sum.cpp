@@ -11,8 +11,7 @@ public:
                     if(i == n){
                         sum= sum - mat[i][n];
                     }
-                    n--;
-                    
+                    n--; 
                 }
              }
         }
