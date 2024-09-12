@@ -12,7 +12,6 @@ public:
                         sum= sum - mat[i][n];
                     }
                     n--;
-                    
                 }
              }
         }
