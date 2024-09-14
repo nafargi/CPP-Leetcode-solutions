@@ -4,7 +4,7 @@ using Matrix = vector<vector<unsigned long long>>;
 const Matrix T = {
    
     {1, 1, 0, 1, 0, 0},
-    {1, 0, 1, 1, 0, 0}, // S1
+    {1, 0, 1, 1, 0, 0}, 
     {1, 0, 0, 1, 0, 0}, // S2
     {0, 0, 0, 1, 1, 0}, // S3
     {0, 0, 0, 1, 0, 1}, // S4
