@@ -2,7 +2,7 @@
 const long long mod=1e9+7;
 using Matrix = vector<vector<unsigned long long>>;
 const Matrix T = {
-    //S0 S1 S2 S3 S4 S5
+   
     {1, 1, 0, 1, 0, 0}, // S0
     {1, 0, 1, 1, 0, 0}, // S1
     {1, 0, 0, 1, 0, 0}, // S2
