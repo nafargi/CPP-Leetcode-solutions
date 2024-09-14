@@ -21,7 +21,7 @@ const Matrix I = {//identity matrix
     {0, 0, 0, 0, 0, 1}
 };
 
-// Overloading the * operator for matrix multiplication
+
 Matrix operator*(const Matrix& A, const Matrix& B) {
     int n = A.size();
     int m = B[0].size();
