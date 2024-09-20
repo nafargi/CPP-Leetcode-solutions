@@ -24,7 +24,6 @@ public:
     }
     vector<string> wordBreak(string s, vector<string>& wordDict) 
     {
-        
         unordered_set<string>dict(wordDict.begin(),wordDict.end());
         vector<string>v;
         string curr="";
