@@ -15,6 +15,7 @@ public:
         if(i<j && nums[i]==nums[j]){
             counter++;
         }
+        
         return counterIndeticalPairs(nums,counter,i,j+1,size);
     }
 };
