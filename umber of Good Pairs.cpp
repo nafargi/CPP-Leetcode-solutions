@@ -5,6 +5,7 @@ public:
         int pairsCounter=0;
         return counterIndeticalPairs(nums,pairsCounter,0,0,n);
     }
+
     int counterIndeticalPairs( vector<int>& nums,int counter,int i, int j ,int size ){
         if(i==size-1){
             return counter;
