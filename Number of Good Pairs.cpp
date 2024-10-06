@@ -1,5 +1,6 @@
 class Solution {
 public:
+
     int numIdenticalPairs(vector<int>& nums) {
         int n =nums.size();
         int pairsCounter=0;
