@@ -9,6 +9,7 @@ public:
         if(i==size-1){
             return counter;
         }
+        
          if(j==size){
             return counterIndeticalPairs(nums,counter,i+1,i+2,size);
         }
