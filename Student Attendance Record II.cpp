@@ -11,8 +11,7 @@ const Matrix T = {
     {0, 0, 0, 1, 0, 0}  // S5
 };
 
-const Matrix I = {//identity matrix
-    //S0 S1 S2 S3 S4 S5
+const Matrix I = {
     {1, 0, 0, 0, 0, 0},
     {0, 1, 0, 0, 0, 0},
     {0, 0, 1, 0, 0, 0},
