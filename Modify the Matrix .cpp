@@ -13,7 +13,6 @@ class Solution {
         if (matrix[i][j] == -1)
           ans[i][j] = maxi;
     }
-
     return ans;
   }
 };
