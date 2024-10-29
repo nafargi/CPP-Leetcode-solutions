@@ -8,7 +8,6 @@ class Solution {
       if (maxCost < 0)
         maxCost += abs(s[j] - t[j++]);
     }
-
-    return s.length() - j;
+  return s.length() - j;
   }
 };
