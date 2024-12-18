@@ -6,7 +6,6 @@ public:
         for(int i=0; i<k; i++){
              sum += nums[i];
         }
-         
       maxNum = sum / (double)k;
       int startIndex=0;
       int endIndex = k;
