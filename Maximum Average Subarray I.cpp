@@ -22,3 +22,24 @@ public:
       return maxNum;
     }
 };
+
+/// second option 
+class Solution {
+public:
+    double findMaxAverage(vector<int>& nums, int k) {
+       double sum =0;
+       double maxav ;
+      
+
+       for(int i =0; i <k; i++){
+          sum += nums[i];
+       }
+        maxav = sum/k;
+      for (int i = k; i < nums.size(); i++) {
+        sum = sum - nums[i - k] + nums[i]; 
+        maxav = max(maxav, sum / k);      
+    }
+      
+      return maxav;
+    }
+};
