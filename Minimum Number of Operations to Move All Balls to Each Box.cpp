@@ -1,5 +1,6 @@
 class Solution {
 public:
+
     vector<int> minOperations(string boxes) {
         int n=boxes.length();
         vector<int>res(n);
