@@ -8,7 +8,6 @@ public:
             ans = max(ans, Prev + values[j] - j);
             Prev = max(Prev, values[j] + j);
         }
-
         return ans;
     }
 };
