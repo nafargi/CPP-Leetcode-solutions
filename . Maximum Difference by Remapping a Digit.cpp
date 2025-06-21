@@ -13,7 +13,7 @@ public:
                 break;
             }
         }
-        // Step 2: Replace that digit with 9 for max
+        // Step 2: Replace that digit with 9 for ma
         for(int i=0;i<n;i++){
             if(ele == str[i]) ma += '9';
             else ma += str[i];
