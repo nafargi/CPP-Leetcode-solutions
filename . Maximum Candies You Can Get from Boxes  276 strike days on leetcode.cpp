@@ -12,7 +12,6 @@ public:
               else
                 reachedClosedBoxes[box] = true;
         };
-
       pushBoxesIfPossible(initialBoxes);
 
       while(!q.empty()){
