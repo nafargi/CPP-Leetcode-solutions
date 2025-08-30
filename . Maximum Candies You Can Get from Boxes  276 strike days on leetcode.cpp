@@ -24,7 +24,6 @@ public:
             if (!status[key] && reachedClosedBoxes[key])
                 q.push(key);
             status[key] = 1;
-
         }
         pushBoxesIfPossible(containedBoxes[currBox]);
 
