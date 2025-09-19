@@ -8,7 +8,6 @@ public:
         }
         return false;
     }
-
     bool isValid(vector<int>& cards) {
         double a = cards[0], b = cards[1], c = cards[2], d = cards[3];
         if (isValid(a+b, c, d) || isValid(a-b, c, d) || isValid(a*b, c, d) || b && isValid(a/b, c, d)) return true;
