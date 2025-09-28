@@ -17,7 +17,6 @@ public:
       while(!q.empty()){
         const int currBox = q.front();
         q.pop();
-
         ans += candies[currBox];
 
         for (const int key :keys[currBox]){
