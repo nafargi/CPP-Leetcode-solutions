@@ -6,7 +6,6 @@ public:
         string mi = "";
         int n = str.size();
         char ele = ' ';
-        // Step 1: Find first non-9 digit for max replacement
         for(int i=0;i<n;i++){
             if(str[i] != '9'){
                 ele = str[i];
