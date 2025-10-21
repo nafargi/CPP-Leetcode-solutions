@@ -15,7 +15,6 @@ public:
         if (isValid(a, b, c+d) || isValid(a, b, c-d) || isValid(a, b, c*d) || d && isValid(a, b, c/d)) return true;
         return false;
     }
-
     bool isValid(double a, double b, double c) {
         if (isValid(a+b, c) || isValid(a-b, c) || isValid(a*b, c) || b && isValid(a/b, c)) return true;
         if (isValid(a, b+c) || isValid(a, b-c) || isValid(a, b*c) || c && isValid(a, b/c)) return true;
